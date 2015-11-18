@@ -38,6 +38,18 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ColorActivity">
+            <intent-filter>
+                <action android:name="phd.com.br.paint.ColorActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".StrokeWidthActivity">
+            <intent-filter>
+                <action android:name="phd.com.br.paint.StrokeWidthActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

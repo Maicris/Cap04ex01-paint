@@ -13,7 +13,7 @@ public class MainActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String items[] = {"Paint.Style", "Paint.Cap", "Paint.Join", "AntiAlias"};
+        String items[] = {"Paint.Style", "Paint.Cap", "Paint.Join", "AntiAlias", "Color", "StrokeWidth"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                 this,
                 android.R.layout.simple_list_item_1,
@@ -36,6 +36,12 @@ public class MainActivity extends ListActivity {
                 break;
             case 3:
                 startActivity(new Intent(this, AliasActivity.class));
+                break;
+            case 4:
+                startActivity(new Intent(this, ColorActivity.class));
+                break;
+            case 5:
+                startActivity(new Intent(this, StrokeWidthActivity.class));
                 break;
         }
     }
